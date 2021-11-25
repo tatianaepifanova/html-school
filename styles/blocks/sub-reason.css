@@ -51,9 +51,17 @@
     justify-content: space-evenly;
   }
 
+  .sub-reason-icon-wrapper {
+    margin: 0;
+  }
+
   .sub-reason-item {
     flex-direction: column;
     align-items: center;
     width: 20%;
+  }
+
+  .sub-reason {
+    text-align: center;
   }
 }
