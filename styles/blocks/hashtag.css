@@ -1,0 +1,10 @@
+.hashtag {
+  display: block;
+  margin: 0 0 33px;
+}
+
+@media (min-width: 768px) {
+  .hashtag {
+    margin: 0;
+  }
+}

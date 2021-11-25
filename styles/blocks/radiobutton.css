@@ -1,0 +1,40 @@
+.radiobutton-input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.radiobutton {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 15px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  mix-blend-mode: normal;
+  margin-right: 24px;
+}
+
+.radiobutton-input:checked + .radiobutton {
+  background-color: #333333;
+}
+
+.radiobutton-input:hover + .radiobutton {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.radiobutton-input:hover:checked + .radiobutton {
+  background-color: #333333;
+  border-color: #e5e5e5;
+}
+
+.radiobutton-input:focus + .radiobutton {
+  outline: 2px #000 auto;
+}
+
+.radiobutton-input:focus:checked + .radiobutton {
+  background-color: #333333;
+  outline: 2px #000 auto;
+}

@@ -1,0 +1,36 @@
+.socials-list {
+  display: flex;
+  /* gap: 6px; */
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  margin: 0 0 40px;
+}
+
+.socials-item {
+  background-color: #81b3d2;
+  width: 48px;
+  height: 48px;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.socials-link {
+  display: flex;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link-icon {
+  fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .socials-list {
+    margin: 0;
+  }
+}

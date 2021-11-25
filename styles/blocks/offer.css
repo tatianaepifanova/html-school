@@ -1,0 +1,17 @@
+.offer {
+  background-color: #ffffff;
+  padding: 33px 18px 49px;
+}
+
+.offer-title {
+  font-size: 21px;
+  display: block;
+  margin: 0 0 30px;
+}
+
+.offer-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0 0 27px;
+}

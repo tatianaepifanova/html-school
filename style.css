@@ -1,0 +1,22 @@
+/* global styles */
+@import "/styles/font.css";
+@import "/styles/body.css";
+@import "/styles/reset.css";
+
+/* block styles */
+@import "/styles/blocks/header.css";
+@import "/styles/blocks/menu.css";
+@import "/styles/blocks/main.css";
+@import "/styles/blocks/welcome-banner.css";
+@import "/styles/blocks/footer.css";
+@import "/styles/blocks/reason.css";
+@import "/styles/blocks/socials.css";
+@import "/styles/blocks/map.css";
+@import "/styles/blocks/sub-reason.css";
+@import "/styles/blocks/offer.css";
+@import "/styles/blocks/hashtag.css";
+@import "/styles/blocks/copyright.css";
+@import "/styles/blocks/form.css";
+@import "/styles/blocks/button.css";
+@import "/styles/blocks/checkbox.css";
+@import "/styles/blocks/radiobutton.css";

@@ -1,0 +1,14 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-link-text {
+  font-size: 14px;
+  margin: 0 10px 0 0;
+}
+
+.copyright-link {
+  height: 35px;
+}

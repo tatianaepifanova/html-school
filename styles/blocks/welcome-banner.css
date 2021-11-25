@@ -1,0 +1,43 @@
+.welcome-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #375663;
+  background-image: url("/img/desktop/banner.jpg");
+  background-repeat: no-repeat;
+  padding: 0 18px;
+  overflow: hidden;
+}
+
+.welcome-banner.main {
+  min-height: 389px;
+  max-height: 518px;
+  background-position: center top;
+}
+
+.welcome-banner.form {
+  min-height: 157px;
+  background-position: center bottom;
+}
+
+.welcome-banner-text {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.welcome-banner-text-icon {
+  height: 100%;
+  width: 80%;
+  max-width: 461px;
+  max-height: 350px;
+}
+
+.main-info-top-border {
+  fill: #ffffff;
+  position: absolute;
+  bottom: 0;
+}
