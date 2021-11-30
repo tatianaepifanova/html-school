@@ -1,43 +1,56 @@
 .welcome-banner {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #375663;
-  background-image: url("/img/desktop/banner.jpg");
+  background-image: url("img/desktop/banner.jpg");
   background-repeat: no-repeat;
   padding: 0 18px;
   overflow: hidden;
 }
 
 .welcome-banner.main {
-  min-height: 389px;
-  max-height: 518px;
+  height: 389px;
   background-position: center top;
 }
 
 .welcome-banner.form {
-  min-height: 157px;
+  height: 157px;
   background-position: center bottom;
 }
 
-.welcome-banner-text {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-}
-
 .welcome-banner-text-icon {
-  height: 100%;
-  width: 80%;
-  max-width: 461px;
-  max-height: 350px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.main-info-top-border {
+.welcome-banner-text-icon-main {
+  height: 66.9%;
+  width: 87.5%;
+  top: 18%;
+}
+
+.welcome-banner-text-icon-form {
+  height: 24.9%;
+  width: 71.6%;
+  top: 33.1%;
+}
+
+.welcome-banner-cutter {
   fill: #ffffff;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .welcome-banner.main {
+    height: 518px;
+    background-position: center top;
+  }
+
+  .welcome-banner.form {
+    height: 300px;
+    background-position: center bottom;
+  }
 }
