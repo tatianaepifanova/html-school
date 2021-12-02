@@ -30,7 +30,7 @@
   font-size: 18px;
   line-height: 40px;
 
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -88,11 +88,27 @@
   .menu-button {
     display: none;
   }
+
   .menu-list {
+    display: flex;
     background-color: #fff;
+  }
+
+  .menu-item {
+    width: 20%;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .menu-item:nth-child(2) {
+    margin-right: auto;
   }
 
   .menu-link {
     color: #000;
+  }
+
+  .menu-link.active {
+    color: #766357;
   }
 }
