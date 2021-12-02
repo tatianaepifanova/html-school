@@ -4,12 +4,24 @@
 
 .reason-image-wrapper {
   display: flex;
-  min-height: 260px;
+  min-height: 256px;
   background-color: #81b3d2;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.reason-image-wrapper.city {
+  background-image: url("/img/tablet/city.jpg");
+}
+
+.reason-image-wrapper.bridge {
+  background-image: url("/img/tablet/bridge.jpg");
 }
 
 .reason-full .reason {
   padding: 36px 18px;
+  overflow: hidden;
 }
 
 .reason-short .reason {
@@ -44,6 +56,7 @@
   position: relative;
   color: #ffffff;
   background-color: #81b3d2;
+  width: 100%;
 }
 
 .reason-short:not(:last-child)::after {
@@ -56,4 +69,28 @@
   background-color: #d6d6d6;
   mix-blend-mode: normal;
   z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reason-full {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .reasons-item {
+    flex-grow: 1;
+  }
+
+  .reason-image-wrapper.city {
+    background-image: url("/img/desktop/city.jpg");
+  }
+
+  .reason-image-wrapper.bridge {
+    background-image: url("/img/desktop/bridge.jpg");
+  }
 }

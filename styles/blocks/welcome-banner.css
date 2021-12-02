@@ -1,7 +1,7 @@
 .welcome-banner {
   position: relative;
   background-color: #375663;
-  background-image: url("img/desktop/banner.jpg");
+  background-image: url("/img/desktop/banner.jpg");
   background-repeat: no-repeat;
   padding: 0 18px;
   overflow: hidden;
