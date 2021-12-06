@@ -1,6 +1,7 @@
 .form {
   position: relative;
   padding: 18px 0 0;
+  width: 100%;
 }
 
 .form-fieldset {
@@ -89,7 +90,7 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
-  padding: 16px 22px;
+  padding: 18px 21px;
 }
 
 .form-input.form-input-iconed {
@@ -98,6 +99,7 @@
 
 .form-input-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .form-input-icon-wrapper {
@@ -145,7 +147,14 @@
 }
 
 .form-submit {
+  display: flex;
   padding: 31px 18px 48px;
+}
+.form-submit-button {
+  width: 100%;
+}
+.form-submit-comment {
+  display: none;
 }
 
 textarea::placeholder,
@@ -156,4 +165,69 @@ input[type="text"]::placeholder {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .visited-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .visited-list-item {
+    width: 34%;
+  }
+  .visited-list-item:nth-child(odd) {
+    margin-left: auto;
+  }
+  .visited-list-item:nth-child(even) {
+    margin-right: auto;
+  }
+
+  .form-submit {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 38px 60px 48px;
+  }
+  .form-submit-comment {
+    display: block;
+    margin-left: auto;
+    font-size: 14px;
+  }
+  .form-submit-button {
+    width: 50%;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-fieldset {
+    padding: 0 60px;
+    flex-grow: 1;
+  }
+
+  .form-legend::before {
+    content: none;
+  }
+
+  .feedback {
+    width: 50%;
+    order: -2;
+  }
+  .feedback > .form-legend {
+    margin-bottom: 60px;
+  }
+
+  .name {
+    width: 50%;
+    order: -1;
+  }
+  .name > .form-legend {
+    margin-bottom: 54px;
+  }
+
+  .feedback-list-item:not(:last-child) {
+    margin: 0 0 30px;
+  }
 }
