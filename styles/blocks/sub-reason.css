@@ -44,12 +44,11 @@
   margin: 0 0 14px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .sub-reason-list {
     display: flex;
     flex-direction: row;
-    align-items: top;
-    justify-content: space-evenly;
+    padding: 60px 30px;
   }
 
   .sub-reason-icon-wrapper {
@@ -59,10 +58,19 @@
   .sub-reason-item {
     flex-direction: column;
     align-items: center;
-    width: 20%;
+  }
+
+  .sub-reason-item:not(:last-child) {
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 
   .sub-reason {
     text-align: center;
+  }
+
+  .sub-reason-icon-wrapper {
+    width: 75px;
+    height: 75px;
   }
 }

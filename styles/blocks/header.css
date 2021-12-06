@@ -1,7 +1,6 @@
 .header {
   position: relative;
   padding-top: 56px;
-  z-index: 1;
 }
 
 .logo {
@@ -9,4 +8,15 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
+}
+
+.logo-border {
+  fill: transparent;
+}
+
+@media (min-width: 1200px) {
+  .logo-border {
+    fill: #81b3d3;
+  }
 }

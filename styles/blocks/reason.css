@@ -3,10 +3,8 @@
 }
 
 .reason-image-wrapper {
-  display: flex;
   min-height: 256px;
   background-color: #81b3d2;
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -56,7 +54,6 @@
   position: relative;
   color: #ffffff;
   background-color: #81b3d2;
-  width: 100%;
 }
 
 .reason-short:not(:last-child)::after {
@@ -71,19 +68,39 @@
   z-index: 1;
 }
 
+.reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .reasons-list {
     display: flex;
     flex-wrap: wrap;
   }
+
   .reason-full {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
 
-  .reasons-item {
+  .reason-full .reason {
+    width: 33%;
+  }
+
+  .reason-full:nth-child(2) {
+    flex-flow: row-reverse;
+  }
+
+  .reason-short {
     flex-grow: 1;
+    max-width: calc(100% / 3);
+  }
+
+  .reason-image-wrapper {
+    width: 67%;
   }
 
   .reason-image-wrapper.city {
@@ -92,5 +109,9 @@
 
   .reason-image-wrapper.bridge {
     background-image: url("/img/desktop/bridge.jpg");
+  }
+
+  .reason-short:not(:last-child)::after {
+    content: none;
   }
 }
