@@ -7,8 +7,14 @@
     width: 50%;
     order: -1;
   }
+
   .name > .form-legend {
     margin-bottom: 54px;
     text-align: left;
+  }
+
+  .name > .form-legend::before,
+  .name > .form-legend::after {
+    content: none;
   }
 }

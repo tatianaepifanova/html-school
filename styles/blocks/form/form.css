@@ -157,13 +157,39 @@ input[type="text"]::placeholder {
     flex-grow: 1;
   }
 
+  .form-legend::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 123px;
+
+    height: 1px;
+    background-color: #d6d6d6;
+    mix-blend-mode: normal;
+    z-index: 1;
+  }
+
   .form-legend::before {
-    content: none;
+    top: 30px;
+    left: 60px;
+    width: 123px;
+    transform: translateX(0);
   }
 }
 
 @media (min-width: 1200px) {
   .form-fieldset {
     padding: 0 120px;
+  }
+
+  .form-legend::after {
+    right: 120px;
+    width: 280px;
+  }
+
+  .form-legend::before {
+    left: 120px;
+    width: 280px;
   }
 }

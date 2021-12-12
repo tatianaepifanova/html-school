@@ -14,6 +14,11 @@
     text-align: left;
   }
 
+  .feedback > .form-legend::before,
+  .feedback > .form-legend::after {
+    content: none;
+  }
+
   .feedback-list-item:not(:last-child) {
     margin: 0 0 30px;
   }
