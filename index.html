@@ -380,8 +380,16 @@
           >
         </div>
         <div class="map">
-          <img class="map-image" src="img/mobile/map.jpg" alt="Как добраться" />
-          <span class="map-marker"></span>
+          <picture>
+            <source srcset="img/desktop/map.jpg" media="(min-width: 1200px)" />
+            <source srcset="img/tablet/map.jpg" media="(min-width: 768px)" />
+            <img
+              class="map-image"
+              src="img/mobile/map.jpg"
+              alt="Как добраться"
+            />
+            <span class="map-marker"></span>
+          </picture>
         </div>
       </section>
     </main>

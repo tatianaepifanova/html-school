@@ -6,6 +6,7 @@
 
 .map-image {
   display: block;
+  width: 100%;
 }
 
 .map-marker {
@@ -17,4 +18,16 @@
   border-radius: 50%;
   height: 27px;
   width: 27px;
+}
+
+@media (min-width: 768px) {
+  .map-marker {
+    left: 370px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map-marker {
+    left: 586px;
+  }
 }
