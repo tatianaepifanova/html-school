@@ -11,11 +11,11 @@
 }
 
 .reason-image-wrapper.city {
-  background-image: url("/img/tablet/city.jpg");
+  background-image: url("/img/desktop/city.jpg");
 }
 
 .reason-image-wrapper.bridge {
-  background-image: url("/img/tablet/bridge.jpg");
+  background-image: url("/img/desktop/bridge.jpg");
 }
 
 .reason-full .reason {
@@ -107,14 +107,6 @@
 
   .reason-image-wrapper {
     width: 67%;
-  }
-
-  .reason-image-wrapper.city {
-    background-image: url("/img/desktop/city.jpg");
-  }
-
-  .reason-image-wrapper.bridge {
-    background-image: url("/img/desktop/bridge.jpg");
   }
 
   .reason-short:not(:last-child)::after {

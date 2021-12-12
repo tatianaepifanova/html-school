@@ -16,8 +16,14 @@
 @import "styles/blocks/offer.css";
 @import "styles/blocks/hashtag.css";
 @import "styles/blocks/copyright.css";
-@import "styles/blocks/form.css";
 @import "styles/blocks/button.css";
 @import "styles/blocks/checkbox.css";
 @import "styles/blocks/radiobutton.css";
 @import "styles/blocks/logo.css";
+
+@import "styles/blocks/form/form.css";
+@import "styles/blocks/form/submit.css";
+@import "styles/blocks/form/sights.css";
+@import "styles/blocks/form/contacts.css";
+@import "styles/blocks/form/feedback.css";
+@import "styles/blocks/form/name.css";

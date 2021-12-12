@@ -1,0 +1,14 @@
+.name-list-item:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+@media (min-width: 768px) {
+  .name {
+    width: 50%;
+    order: -1;
+  }
+  .name > .form-legend {
+    margin-bottom: 54px;
+    text-align: left;
+  }
+}

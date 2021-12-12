@@ -1,0 +1,34 @@
+.contacts-list-item:not(:last-child) {
+  margin: 0 0 14px;
+}
+
+@media (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+  }
+
+  .contacts-list-item {
+    width: 50%;
+  }
+
+  .contacts-list-item:not(:last-child) {
+    padding-right: 76px;
+  }
+
+  .form-group-vertical {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-label-text-short {
+    display: block;
+  }
+
+  .form-label-text-full {
+    display: none;
+  }
+
+  .contacts > .form-legend {
+    margin-bottom: 70px;
+  }
+}

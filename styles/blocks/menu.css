@@ -148,4 +148,7 @@
   .menu-link:hover:not(:active) {
     color: #81b3d2;
   }
+  .menu-link-text {
+    max-width: 200px;
+  }
 }

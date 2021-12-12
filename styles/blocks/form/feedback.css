@@ -1,0 +1,26 @@
+.feedback-list-item:not(:last-child) {
+  margin: 0 0 11px;
+}
+
+@media (min-width: 768px) {
+  .feedback {
+    width: 50%;
+    order: -2;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .feedback > .form-legend {
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  .feedback-list-item:not(:last-child) {
+    margin: 0 0 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback > .form-legend {
+    text-align: center;
+  }
+}
