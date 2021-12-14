@@ -31,4 +31,8 @@
   .contacts > .form-legend {
     margin-bottom: 70px;
   }
+
+  .contacts > .form-input {
+    min-width: 256px;
+  }
 }

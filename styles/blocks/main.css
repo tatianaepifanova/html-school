@@ -3,6 +3,13 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+.main-info-main {
+  padding: 32px 0 0;
+}
+
+.main-info-form {
   padding: 32px 0 0;
 }
 
@@ -30,11 +37,29 @@
 }
 
 @media (min-width: 768px) {
+  .main-info-main {
+    padding: 44px 0 0;
+  }
+
+  .main-info-form {
+    padding: 64px 0 0;
+  }
+
   .main-info-text {
     margin-bottom: 52px;
   }
 
   .main-info-bottom-border {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-info-main {
+    padding: 55px 0 0;
+  }
+
+  .main-info-form {
+    padding: 114px 0 0;
   }
 }
