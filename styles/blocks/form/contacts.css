@@ -5,14 +5,11 @@
 @media (min-width: 1200px) {
   .contacts-list {
     display: flex;
+    gap: 76px;
   }
 
   .contacts-list-item {
     width: 50%;
-  }
-
-  .contacts-list-item:not(:last-child) {
-    padding-right: 76px;
   }
 
   .form-group-vertical {
