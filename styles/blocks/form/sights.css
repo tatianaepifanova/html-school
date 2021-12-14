@@ -10,15 +10,11 @@
   .sights-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 160px;
   }
+
   .sights-list-item {
-    width: 34%;
-  }
-  .sights-list-item:nth-child(odd) {
-    margin-left: auto;
-  }
-  .sights-list-item:nth-child(even) {
-    margin-right: auto;
+    width: 50%;
   }
 }
 
@@ -26,6 +22,7 @@
   .sights-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .sights-list-item {
