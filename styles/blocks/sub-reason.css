@@ -60,9 +60,9 @@
     align-items: center;
   }
 
-  .sub-reason-item:not(:last-child) {
-    margin-right: 70px;
-    margin-bottom: 0;
+  .sub-reason-item {
+    padding: 0 15px;
+    margin: 0;
   }
 
   .sub-reason {
@@ -72,5 +72,23 @@
   .sub-reason-icon-wrapper {
     width: 75px;
     height: 75px;
+  }
+
+  .appartments {
+    order: -3;
+  }
+
+  .food {
+    order: -2;
+  }
+
+  .souvenirs {
+    order: -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sub-reason {
+    padding: 10px 40px 0;
   }
 }

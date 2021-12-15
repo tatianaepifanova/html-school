@@ -31,6 +31,7 @@
   font-size: 18px;
   margin: 0;
   margin: 0 0 14px;
+  max-width: 150px;
 }
 
 .reason-text {
@@ -81,6 +82,10 @@
     flex-wrap: wrap;
   }
 
+  .reason-title {
+    font-size: 21px;
+  }
+
   .reason-full {
     display: flex;
     flex-wrap: wrap;
@@ -88,12 +93,13 @@
   }
 
   .reason-full .reason {
-    width: 33%;
-    padding: 36px 32px;
+    width: calc(100% / 3);
+    padding: 42px 42px;
   }
 
   .reason-short .reason {
-    padding: 42px 32px;
+    padding: 42px 40px;
+    height: 256px;
   }
 
   .reason-full:nth-child(2) {
@@ -106,15 +112,16 @@
   }
 
   .reason-image-wrapper {
-    width: 67%;
+    width: calc(100% / 3 * 2);
   }
 
   .reason-short:not(:last-child)::after {
     content: none;
   }
 }
+
 @media (min-width: 1200px) {
   .reason-full .reason {
-    padding: 54px 32px;
+    padding: 53px 68px;
   }
 }
