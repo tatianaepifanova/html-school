@@ -12,22 +12,11 @@
 .map-marker {
   position: absolute;
   top: 161px;
-  left: 146px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 5px solid #ffffff;
   background-color: #81b3d3;
   border-radius: 50%;
   height: 27px;
   width: 27px;
-}
-
-@media (min-width: 768px) {
-  .map-marker {
-    left: 370px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .map-marker {
-    left: 586px;
-  }
 }
