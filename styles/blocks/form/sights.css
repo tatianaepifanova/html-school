@@ -10,18 +10,21 @@
   .sights-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     padding: 0 160px;
   }
 
   .sights-list-item {
     width: 50%;
   }
+
+  .sights-list-item:not(:last-child) {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {
   .sights-list {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0;
   }
 
