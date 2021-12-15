@@ -64,8 +64,6 @@
   font-size: 14px;
   line-height: 26px;
   margin-right: 14px;
-  white-space: nowrap;
-  /* flex-shrink: 0; */
 }
 
 .form-input {

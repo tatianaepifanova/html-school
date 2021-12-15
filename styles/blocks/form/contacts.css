@@ -5,6 +5,7 @@
 @media (min-width: 1200px) {
   .contacts-list {
     display: flex;
+    align-items: center;
   }
 
   .contacts-list-item {
@@ -13,6 +14,10 @@
 
   .contacts-list-item:not(:last-child) {
     padding-right: 76px;
+  }
+
+  .form-input-wrapper {
+    min-width: 258px;
   }
 
   .form-group-vertical {
