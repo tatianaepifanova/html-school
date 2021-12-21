@@ -1,12 +1,11 @@
 .map {
   position: relative;
-  min-height: 350px;
-  background-color: #f4f3ef;
-}
-
-.map-image {
-  display: block;
+  height: 350px;
   width: 100%;
+  background-color: #f4f3ef;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .map-marker {
