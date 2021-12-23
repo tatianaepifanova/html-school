@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: #fff;
 }
 
 .main-info-main {
