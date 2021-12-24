@@ -1,8 +1,9 @@
 .radiobutton-input {
   position: absolute;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .radiobutton {
@@ -14,27 +15,46 @@
   border-radius: 50%;
   mix-blend-mode: normal;
   margin-right: 24px;
+  transition: all 0.2s ease-in-out;
 }
 
 .radiobutton-input:checked + .radiobutton {
   background-color: #333333;
-}
-
-.radiobutton-input:hover + .radiobutton {
-  background-color: #e5e5e5;
-  border-color: #e5e5e5;
-}
-
-.radiobutton-input:hover:checked + .radiobutton {
-  background-color: #333333;
-  border-color: #e5e5e5;
+  transition: all 0.2s ease-in-out;
 }
 
 .radiobutton-input:focus + .radiobutton {
-  outline: 2px #000 auto;
+  outline: -webkit-focus-ring-color auto 1px;
+  transition: all 0.2s ease-in-out;
 }
 
 .radiobutton-input:focus:checked + .radiobutton {
   background-color: #333333;
-  outline: 2px #000 auto;
+  outline: -webkit-focus-ring-color auto 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.radiobutton-input:active + .radiobutton {
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+  transition: all 0.2s ease-in-out;
+}
+
+.radiobutton-input:active:checked + .radiobutton {
+  background-color: #33333370;
+  border-color: #d5d5d5;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+  .radiobutton-input:hover + .radiobutton {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    transition: all 0.2s ease-in-out;
+  }
+  .radiobutton-input:checked:hover + .radiobutton {
+    background-color: #333333;
+    border-color: #e5e5e5;
+    transition: all 0.2s ease-in-out;
+  }
 }
