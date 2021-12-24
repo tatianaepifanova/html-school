@@ -29,8 +29,30 @@
   fill: #ffffff;
 }
 
+.socials-link:active .social-link-icon {
+  fill: #ffffff70;
+  background-color: #5496bd;
+  transition: all 0.2s ease-in-out;
+}
+.socials-item:active {
+    background-color: #5496bd;
+    transition: all 0.2s ease-in-out;
+  }
+
 @media (min-width: 768px) {
   .socials-list {
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .socials-link:hover .social-link-icon {
+    background-color: #5496bd;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .socials-item:hover {
+    background-color: #5496bd;
+    transition: all 0.2s ease-in-out;
   }
 }

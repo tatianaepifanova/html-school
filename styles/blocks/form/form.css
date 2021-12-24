@@ -77,6 +77,12 @@
   padding: 18px 21px;
 }
 
+.form-input:active {
+  background-color: #fff;
+  border: 4px solid #e5e5e5;
+  transition: all 0.2s ease-in-out;
+}
+
 .form-input.form-input-iconed {
   padding-right: calc(22px + 58px);
 }
@@ -189,5 +195,10 @@ input[type="text"]::placeholder {
   .form-legend::before {
     left: 120px;
     width: 280px;
+  }
+
+  .form-input:hover {
+    background-color: #e5e5e5;
+    transition: all 0.2s ease-in-out;
   }
 }

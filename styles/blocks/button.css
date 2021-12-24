@@ -11,3 +11,16 @@
   text-transform: inherit;
   max-width: 458px;
 }
+
+.button:active {
+  color: #ffffff70;
+  background-color: #669ec0;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+  .button:hover {
+    background-color: #669ec0;
+    transition: all 0.2s ease-in-out;
+  }
+}
