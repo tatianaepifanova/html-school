@@ -20,41 +20,34 @@
 
 .radiobutton-input:checked + .radiobutton {
   background-color: #333333;
-  transition: all 0.2s ease-in-out;
 }
 
 .radiobutton-input:focus + .radiobutton {
   outline: -webkit-focus-ring-color auto 1px;
-  transition: all 0.2s ease-in-out;
 }
 
 .radiobutton-input:focus:checked + .radiobutton {
   background-color: #333333;
   outline: -webkit-focus-ring-color auto 1px;
-  transition: all 0.2s ease-in-out;
 }
 
 .radiobutton-input:active + .radiobutton {
   background-color: #d5d5d5;
   border-color: #d5d5d5;
-  transition: all 0.2s ease-in-out;
 }
 
 .radiobutton-input:active:checked + .radiobutton {
   background-color: #33333370;
   border-color: #d5d5d5;
-  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 1200px) {
-  .radiobutton-input:hover + .radiobutton {
+  .radiobutton-input:hover:not(:active) + .radiobutton {
     background-color: #e5e5e5;
     border-color: #e5e5e5;
-    transition: all 0.2s ease-in-out;
   }
-  .radiobutton-input:checked:hover + .radiobutton {
+  .radiobutton-input:checked:hover:not(:active) + .radiobutton {
     background-color: #333333;
     border-color: #e5e5e5;
-    transition: all 0.2s ease-in-out;
   }
 }

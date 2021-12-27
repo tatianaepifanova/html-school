@@ -16,10 +16,12 @@
 .logo-border {
   fill: transparent;
 }
+.copyright-link .copyright-link-icon{
+  transition: all 0.2s ease-in-out;
+}
 
 .copyright-link:active .copyright-link-icon {
   fill: #00000070;
-  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 1200px) {
@@ -27,8 +29,7 @@
     fill: #81b3d3;
   }
 
-  .copyright-link:hover .copyright-link-icon {
+  .copyright-link:hover:not(:active) .copyright-link-icon {
     fill: #81b3d2;
-    transition: all 0.2s ease-in-out;
   }
 }
