@@ -42,6 +42,11 @@
     padding: 44px 0 0;
   }
 
+  .main-info-title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
   .main-info-form {
     padding: 64px 0 0;
   }
